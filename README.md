@@ -2,7 +2,7 @@
 <p><a href="https://paulangeloreyes.netlify.app/">Paul Angelo Reyes</a></p>
 <p><a href="https://ex-13.netlify.app">Shamma San Jose Bergado</a></p>
 <p><a href="https://reyes-johnruizz.netlify.app/">John Ruiz Parayno Reyes</a></p>
-<p><a href="">Mary Nicole Perillo Norona</a></p>
+<p><a href="https://noronamary.netlify.app/">Mary Nicole Perillo Norona</a></p>
 <p><a href="">Daisy Cangayda Morcoso</a></p>
 
 <p>Feel free to explore our repository!</p>
