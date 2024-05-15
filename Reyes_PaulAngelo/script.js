@@ -22,11 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     const name = commentNameInput.value.trim();
     const text = commentTextInput.value.trim();
-    if (name && text) {
-      addComment(name, text, new Date());
-      commentForm.reset();
-      checkCommentValidity();
+
+    if (!name || !text) {
+      return;
     }
+
+    addComment(name, text, new Date());
+    commentForm.reset();
+    checkCommentValidity();
   });
 
   function addComment(name, text, date) {
