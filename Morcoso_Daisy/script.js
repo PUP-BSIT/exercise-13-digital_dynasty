@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   commentTextarea.addEventListener("input", checkFormValidity);
   commentButton.addEventListener("click", addComment);
 
-  document.getElementById("sort_asc").addEventListener("click", function () {
+  document.getElementById("sort_asc").addEventListener("click", function() {
     sortComments("asc");
   });
-  document.getElementById("sort_desc").addEventListener("click", function () {
+  document.getElementById("sort_desc").addEventListener("click", function() {
     sortComments("desc");
   });
 
@@ -21,9 +21,7 @@ let comments = [];
 
 function checkFormValidity() {
   let nameValue = document.getElementById("name").value.trim();
-  let commentValue = document
-    .getElementById("textarea_for_comment")
-    .value.trim();
+  let commentValue = document.getElementById("textarea_for_comment").value.trim();
   document.getElementById("comment").disabled = !(nameValue && commentValue);
 }
 
@@ -61,9 +59,9 @@ function displayComments() {
 }
 
 function sortComments(order) {
-  if (order === "asc") {
+  if (!asc) {
     comments.sort((a, b) => new Date(a.date) - new Date(b.date));
-  } else if (order === "desc") {
+  } else if (!desc) {
     comments.sort((a, b) => new Date(b.date) - new Date(a.date));
   }
   displayComments();

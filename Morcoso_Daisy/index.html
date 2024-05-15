@@ -98,34 +98,18 @@
     </ol>
   </div>
 
-  <div class="add-comment-container">
-    <h3>Add a Comment Here</h3>
-    <form action="#" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="comment">Comment:</label><br>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-      <button type="comment" name="comment" id="comment">Comment</button>
-    </form>
-  </div>
-  
+  <h3>Add a comment here</h3>
+  <form class="add-comment">
+    <input type="text" name="name" id="name" placeholder="Enter your name" />
+    <textarea name="textarea-for-comment" id="textarea_for_comment"  
+     placeholder="Add your comment here"></textarea>
+    <button type="button" name="comment" id="comment">Comment</button>
+    <button type="button" id="sort_asc">Sort by Date (Ascending)</button>
+    <button type="button" id="sort_desc">Sort by Date (Descending)</button>
+  </form>
+
   <div class="comments-of-team-comment">
     <h3>Comments</h3>
-    <p>Name: Paul Angelo Reyes</p>
-    <p>Comment: You did great!</p>
-    <p>Name: John Ruiz Parayno Reyes</p>
-    <p>
-      Comment:Believe in yourself, embrace the challenges, and persist with
-      determination; your efforts will lead you to the success you desire.
-      </p>
-    <p>Name: Mary Nicole Perillo Norona</p>
-    <p>Comment: Don't be afraid to do your best in the things that you are 
-      doing to achieve your goals in life.</p>
-    <p>Name: Shamma Bergado</p>
-    <p>
-      Comment: You have a lot of goals in life, I wish you can achieve all of
-      that someday :>
-    </p>
   </div>
 
   <div class="oc-thoughts">
@@ -164,9 +148,9 @@
       <div class="testimonial">
         <p>
           Bergado, Shamma S.J. Monday, April 8, 2024. Coding with my group mate
-          Daisy has been a breeze, thanks to her exceptional skills and seamless
-          communication. Together, we've tackled complex challenges with
-          confidence and achieved remarkable results.
+          Daisy has been a breeze, thanks to her exceptional skills and 
+          seamless communication. Together, we've tackled complex challenges 
+          with confidence and achieved remarkable results.
         </p>
       </div>
       <div class="testimonial">
@@ -175,7 +159,6 @@
           a game-changer. Their diverse expertise and strong work ethic 
           drive our projects with precision and efficiency.
         </p>
-
       </div>
       <div class="testimonial">
         <p>
@@ -188,60 +171,37 @@
     <div class="contact-container">
       <h2>Contact Me</h2>
       <form class="form">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          autocomplete="off"
-          required/>
-        <input
-          type="text"
-          name="Fullname"
-          placeholder="Fullname"
-          autocomplete="off"
-          required/>
-
-        <input
-          type="text"
-          name="Subject"
-          placeholder="Subject"
-          autocomplete="off"
-          required/>
-
-        <input
-          type="number"
-          name="Age"
-          placeholder="Age"
-          autocomplete="off"
-          required/>
-
+        <input type="email" name="email" placeholder="Email Address" 
+         autocomplete="off" required />
+        <input type="text" name="Fullname" 
+         placeholder="Fullname" 
+         autocomplete="off" required />
+        <input type="text" name="Subject" 
+         placeholder="Subject" autocomplete="off" required />
+        <input type="number" name="Age" placeholder="Age" 
+         autocomplete="off" required />
         <label for="copy" class="checkbox-label">
           <input type="checkbox" id="copy" name="copy" />
           <span>Send me a copy</span>
         </label>
-        <textarea
-          rows="5"
-          cols="60"
-          name="message"
-          placeholder="Enter text"
-          autocomplete="off"
-          required></textarea>
+        <textarea rows="5" cols="60" name="message" placeholder="Enter text"
+          autocomplete="off" required></textarea>
         <button type="submit" name="submit" id="submit">Submit</button>
       </form>
     </div>
 
     <div id="gallery">
       <h2>Gallery</h2>
-      <img src="daisy flower.jpg" alt="daisy lower" width="150" height="200"/>
-      <img
-        src="download (1).jpg"
-        alt="hirayamanarawi"
-        width="200"
-        height="200"/>
-      <img src="kape.jpg" alt="kape" width="300" height="200"/>
-      <img src="bts.jpg" alt="bts" width="300" height="200"/>
-      <img src="study.jpg" alt="study" width="300" height="200"/>
-      <img src="drink coffeee.jpg" alt="coffeee" width="300" height="200"/>
+      <img src="daisy flower.jpg" alt="daisy lower" 
+       width="150" height="200" />
+      <img src="download (1).jpg" alt="hirayamanarawi" 
+       width="200" height="200" />
+      <img src="kape.jpg" alt="kape" width="300" height="200" />
+      <img src="bts.jpg" alt="bts" width="300" height="200" />
+      <img src="study.jpg" alt="study" width="300" height="200" />
+      <img src="drink coffeee.jpg" alt="coffeee" width="300" height="200" />
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
