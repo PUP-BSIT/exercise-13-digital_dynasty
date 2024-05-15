@@ -1,7 +1,7 @@
-<p><a href="">Digital Dynasty</a></p>
-<p><a href="">Paul Angelo Reyes</a></p>
+<p><a href="https://ex-13-digital-dynasty.netlify.app">Digital Dynasty</a></p>
+<p><a href="https://paulangeloreyes.netlify.app/">Paul Angelo Reyes</a></p>
 <p><a href="https://ex-13.netlify.app">Shamma San Jose Bergado</a></p>
-<p><a href="">John Ruiz Parayno Reyes</a></p>
+<p><a href="https://reyes-johnruizz.netlify.app/">John Ruiz Parayno Reyes</a></p>
 <p><a href="">Mary Nicole Perillo Norona</a></p>
 <p><a href="">Daisy Cangayda Morcoso</a></p>
 
