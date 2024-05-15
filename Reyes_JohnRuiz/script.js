@@ -22,11 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     const name = commentNameInput.value.trim();
     const text = commentTextInput.value.trim();
-    if (name && text) {
-      addComment(name, text, new Date());
-      commentForm.reset();
-      checkCommentValidity();
+
+    if (!name || !text) {
+      return;
     }
+
+    addComment(name, text, new Date());
+    commentForm.reset();
+    checkCommentValidity();
   });
 
   function addComment(name, text, date) {
@@ -39,13 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function sortComments(ascending = true) {
-    comments.sort((a, b) => (ascending ? a.date - b.date : b.date - a.date));
-    renderComments();
+    const sortedComments = [...comments]; 
+    sortedComments.sort((a, b) => (ascending ? a.date - b.date : b.date - a.date));
+    renderComments(sortedComments); 
   }
 
-  function renderComments() {
-    commentsContainer.innerHTML = "";
-    comments.forEach((comment) => {
+  function renderComments(commentsToRender) {
+    commentsToRender.forEach((comment) => {
       const commentElement = document.createElement("p");
       commentElement.innerHTML = `Name: ${comment.name}<br>Comment: ${
         comment.text
