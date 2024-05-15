@@ -4,10 +4,7 @@ form {
   padding: 10px;
 }
 
-#email
-#name
-#subject
-#age {
+#email #name #subject #age {
   width: 50px;
 }
 
@@ -125,18 +122,31 @@ body {
 }
 
 .title,
-#my_name {
+#my_name,
+.goals,
+.opinion {
   border: 2px solid;
   text-align: center;
   font-style: italic;
   font-family: "Arial Narrow Bold";
 }
 
+.comment input {
+  width: 100%;
+}
+
+.comment textarea {
+  width: 100%;
+}
+
+.comment button {
+  width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   body {
     background-color: lightblue;
   }
-
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -149,5 +159,4 @@ body {
   body {
     background-color: lightyellow;
   }
-
 }
