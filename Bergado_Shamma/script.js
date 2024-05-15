@@ -43,10 +43,10 @@ function displayComments() {
     commentDiv.classList.add("comment");
     const commentDate = new Date(comment.date).toLocaleString();
     commentDiv.innerHTML = `
-            <p>Name: ${comment.name}</p>
-            <p>Comment: ${comment.text}</p>
-            <p class="comment-date">Date: ${commentDate}</p>
-        `;
+              <p>Name: ${comment.name}</p>
+              <p>Comment: ${comment.text}</p>
+              <p class="comment-date">Date: ${commentDate}</p>
+          `;
     commentsSection.appendChild(commentDiv);
   });
 }
