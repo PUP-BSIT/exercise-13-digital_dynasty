@@ -107,8 +107,8 @@
 
         <input type="text" name="subject" id="subject" placeholder="Subject" />
 
-        <textarea name="message" id="message" placeholder="Send me a Message">
-        </textarea>
+        <textarea name="message" id="message" 
+          placeholder="Send me a Message"></textarea>
 
         Send me a Copy<input type="checkbox" name="copy" id="copy" />
 
@@ -144,19 +144,23 @@
       <p>Comment: Achieve your goals, I know you can do it!</p>
       <p>Name: John Ruiz Parayno Reyes</p>
       <p>
-        Comment:Stay focused on your goals, keep pushing forward, and trust that
-        your resilience will lead you to the fulfillment of your dreams.
+        Comment: Stay focused on your goals, keep pushing forward, and trust
+        that your resilience will lead you to the fulfillment of your dreams.
       </p>
       <p>Name: Mary Nicole Perillo Norona</p>
       <p>
-        Comment: Your passion and dedication will be a way to achieve your goals
+        Comment: Your passion and dedication will be a way to achieve your goal
         in life.
       </p>
       <p>Name: Daisy Cangayda Morcoso</p>
       <p>
-        Comment: It's impressive how your goals are aligned with your values and
-        aspirations, guiding you towards a fulfilling path.
+        Comment: It's impressive how your goals are aligned with your values 
+        and aspirations, guiding you towards a fulfilling path.
       </p>
+
+      <div id="comments-container"></div>
+      <button id="sort-asc">Sort by Date (Asc)</button>
+      <button id="sort-desc">Sort by Date (Desc)</button>
     </div>
 
     <div id="comments">
@@ -165,8 +169,9 @@
         <input type="text" id="comment-name" placeholder="Your Name" />
         <textarea id="comment-text" placeholder="Your Comment"></textarea>
         <button type="button" id="submit-comment" disabled>Comment</button>
-        <script src="./script.js"></script>
       </form>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
