@@ -39,6 +39,7 @@ body {
 .works li,
 .my-goals li,
 .comments-of-team,
+.comments-of-team2,
 .reasons {
   background-color: rgb(173, 216, 230);
   color: black;
@@ -127,7 +128,9 @@ form {
 #submit,
 #name2,
 #textarea_for_comment,
-#comment {
+#comment,
+#sort_asc,
+#sort_desc {
   width: 95%;
   background-color: rgb(173, 216, 230);
   font-size: larger;
