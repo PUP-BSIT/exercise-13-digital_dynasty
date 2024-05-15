@@ -21,23 +21,26 @@ function checkFormValidity() {
 function addComment() {
   const nameInput = document.getElementById("name").value;
   const commentInput = document.getElementById("gcomment").value;
-  if (nameInput.trim() && commentInput.trim()) {
-    const comment = {
-      name: nameInput,
-      text: commentInput,
-      date: new Date().toISOString(),
-    };
-    comments.push(comment);
-    saveComments();
-    displayComments();
-    document.getElementById("name").value = "";
-    document.getElementById("gcomment").value = "";
+
+  if (!nameInput.trim() || !commentInput.trim()) {
+    return;
   }
+
+  const comment = {
+    name: nameInput,
+    text: commentInput,
+    date: new Date().toISOString(),
+  };
+  comments.push(comment);
+  saveComments();
+  displayComments();
+  document.getElementById("name").value = "";
+  document.getElementById("gcomment").value = "";
 }
 
 function displayComments() {
   const commentsSection = document.querySelector(".comment");
-  commentsSection.innerHTML += "<h2 class='title'>COMMENTS</h2>";
+  commentsSection.innerHTML += "<h2 class='comment'>COMMENTS</h2>";
   comments.forEach((comment) => {
     const commentDiv = document.createElement("div");
     commentDiv.classList.add("comment");
