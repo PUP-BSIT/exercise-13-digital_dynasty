@@ -2,25 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
   let nameInput = document.getElementById("name");
   let commentTextarea = document.getElementById("textarea_for_comment");
   let commentButton = document.getElementById("comment");
-  let resetButton = document.getElementById("reset-comments");
 
   nameInput.addEventListener("input", checkFormValidity);
   commentTextarea.addEventListener("input", checkFormValidity);
-  resetButton.addEventListener("click", resetComments);
+  commentButton.addEventListener("click", addComment);
 
-  function checkFormValidity() {
-    let nameValue = nameInput.value.trim();
-    let commentValue = commentTextarea.value.trim();
-    commentButton.disabled = !(nameValue && commentValue);
-  }
-
-  checkFormValidity();
   loadComments();
 });
 
 let comments = [];
 
-document.getElementById("comment").addEventListener("click", addComment);
+function checkFormValidity() {
+  let nameValue = nameInput.value.trim();
+  let commentValue = commentTextarea.value.trim();
+  commentButton.disabled = !(nameValue && commentValue);
+}
 
 function addComment() {
   const nameInput = document.getElementById("name").value;
@@ -33,9 +29,9 @@ function addComment() {
     };
     comments.push(comment);
     saveComments();
+    displayComments();
     document.getElementById("name").value = "";
     document.getElementById("textarea_for_comment").value = "";
-    displayComments();
   }
 }
 
